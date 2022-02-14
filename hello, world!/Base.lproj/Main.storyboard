@@ -41,6 +41,9 @@
                                         </hierarchicalColors>
                                     </imageReference>
                                 </state>
+                                <connections>
+                                    <action selector="showOrHideButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="DXv-Yu-83z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -53,6 +56,10 @@
                             <constraint firstItem="5OT-5K-a9G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cGb-xz-JxJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLable" destination="3hv-rH-X3e" id="OUj-Tl-faM"/>
+                        <outlet property="showOrHideButton" destination="5OT-5K-a9G" id="kOc-Pb-K4C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

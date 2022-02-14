@@ -8,12 +8,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var helloWorldLable: UILabel!
+    @IBOutlet var showOrHideButton: UIButton!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        helloWorldLable.isHidden = true
+        showOrHideButton.layer.cornerRadius = 15
+        helloWorldLable.textColor = .systemMint
+
     }
 
+    @IBAction func showOrHideButtonPressed() {
+        helloWorldLable.isHidden.toggle()
 
+        if helloWorldLable.isHidden {
+            showOrHideButton.setTitle("show or hide", for: .normal)
+        } else {
+            showOrHideButton.setTitle("shut down", for: .normal)
+        }
+    }
 }
-
